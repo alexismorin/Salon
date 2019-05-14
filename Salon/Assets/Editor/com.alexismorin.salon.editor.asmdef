@@ -1,0 +1,15 @@
+{
+    "name": "com.alexismorin.salon.editor",
+    "references": [
+        "com.alexismorin.salon.runtime"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

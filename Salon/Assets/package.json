@@ -1,0 +1,7 @@
+{
+	"name": "com.alexismorin.salon",
+	"displayName": "Salon",
+	"version": "0.0.1",
+	"unity": "2019.2",
+	"description": "VR Hairdressing tool to facilitate the hair card authoring process."
+}
