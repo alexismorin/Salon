@@ -18,7 +18,7 @@ Just launch the standalone app or the *Salon* Unity scene inside the project.
 - Keyboard Backspace *or* Motion Controller Grip Button: Undo.
 - Spacebar: Export to OBJ. 
 
-![process](images/process.png)
+![process](images/gif.gif)
 
 ### Requirements
 - Unity 2019.2.0b1 or later
