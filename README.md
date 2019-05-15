@@ -15,8 +15,9 @@ Unlike most of my other stuff, this repo contains both a sample project and an e
 Just launch the standalone app or the *Salon* Unity scene inside the project.
 
 - Motion Controller Trigger: Press and hold to draw hair.
-- Keyboard Backspace *or* Motion Controller Grip Button: Undo.
+- Backspace *or* Motion Controller Grip Button: Undo.
 - Spacebar: Export to OBJ. 
+- Escape: Quit
 
 ![process](images/gif.gif)
 
