@@ -25,12 +25,17 @@ Just launch the standalone app or the *Salon* Unity scene inside the project.
 - A VR headset with motion controllers (Tested on Oculus Rift CV1, ought to work with the HTC Vive + Wands and maybe with WMR headsets)
 
 ### TODO
+- Fix the bug where if you draw with both hands it explodes
 - Make the multiple hair types backend actually work - a bunch of textures are in but it needs a bit of code.
 - Better in-headset UI and UX
 - Reference frame to load portraits
 
+
 ### Acknowledgements
 - [Hrafnkell Freyr Hlöðversson](https://wiki.unity3d.com/index.php/ObjExporter) for coming up with the OBJExporter script so I wouldn't have to.
 - [Matt Dean, Adam Frisby and Alan Zucconi](https://github.com/AdamFrisby/UnityHairShader) for the packaged Hair shader (full MIT license in the package). 
+
+Per usual, whipped up in around... 7 hours? Try and enjoy in spite of the bugs.
+
 
 ![output](images/output.png)
