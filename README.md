@@ -22,7 +22,7 @@ Just launch the standalone app or the *Salon* Unity scene inside the project.
 ![process](images/gif.gif)
 
 ### Requirements
-- Unity 2019.2.0b1 or later
+- Unity 2019.2.0b1 or later (jf you're using the project and not the standalone build)
 - A VR headset with motion controllers (Tested on Oculus Rift CV1, ought to work with the HTC Vive + Wands and maybe with WMR headsets)
 
 ### TODO
