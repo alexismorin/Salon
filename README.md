@@ -2,7 +2,7 @@
 
 While it *is* getting better, authoring hair cards for real-time engines is still pretty painful. With hair polycount in some games like FFXV running up to *15 thousand polygons*, even the less painful card authoring systems like xgen are still pretty tedious - It's kind of a shame that after having a bunch of zBrush fibermesh fun character artists have to live off of splines and slow-paced iteration.
 
-With this Unity project / Standalone tool authoring hair has never been easier - a little like Oculus' *Quill*, you simply point, drag and release to spawn strands of hair; you can then export the geometry to a third-party DCC for finetuning.
+With this Standalone tool (and optional Unity project) authoring hair has never been easier - a little like Oculus' *Quill*, you simply point, drag and release to spawn strands of hair; you can then export the geometry to a third-party DCC for finetuning.
 
 ### Install process
 
