@@ -73,7 +73,7 @@ public class salon2D : MonoBehaviour {
             ExportOBJ ();
         }
 
-        if (Input.GetKeyDown (KeyCode.Backspace)) {
+        if (Input.GetKeyDown (KeyCode.Q)) {
             Undo ();
         }
 
