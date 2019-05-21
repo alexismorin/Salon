@@ -57,7 +57,27 @@ public class salon2D : MonoBehaviour {
         ChangeHairType (shortHair);
     }
 
-    void Undo () {
+    public void ChangeHairShort () {
+        ChangeHairType (shortHair);
+    }
+
+    public void ChangeHairLong () {
+        ChangeHairType (longHair);
+    }
+
+    public void ChangeHairKinky () {
+        ChangeHairType (kinkyHair);
+    }
+
+    public void ChangeHairCurly () {
+        ChangeHairType (curlyHair);
+    }
+
+    public void ChangeHairFlyaway () {
+        ChangeHairType (flyawayHair);
+    }
+
+    public void Undo () {
         if (hairStrands.Count > 0) {
             Destroy (hairStrands[hairStrands.Count - 1].gameObject);
             hairStrands.RemoveAt (hairStrands.Count - 1);

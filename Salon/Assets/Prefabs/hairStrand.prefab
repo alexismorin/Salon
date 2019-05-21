@@ -80,16 +80,16 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
-        inSlope: 0.12935466
-        outSlope: 0.12935466
+        value: 0.01
+        inSlope: 0.2002558
+        outSlope: 0.2002558
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.11258278
+        outWeight: 0.11838791
       - serializedVersion: 3
         time: 1
-        value: 0.06
+        value: 0.054
         inSlope: 0.013888593
         outSlope: 0.013888593
         tangentMode: 0
