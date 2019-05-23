@@ -84,9 +84,13 @@ public class salon2D : MonoBehaviour {
         }
     }
 
+    public void Exit () {
+        Application.Quit ();
+    }
+
     void Update () {
-        if (Input.GetKey ("escape")) {
-            Application.Quit ();
+        if (Input.GetKeyDown ("escape")) {
+            Exit ();
         }
 
         if (Input.GetKeyDown (KeyCode.Space)) {
@@ -120,6 +124,7 @@ public class salon2D : MonoBehaviour {
         if (Input.GetMouseButtonUp (0)) {
             StopCreatingStrand ();
             Destroy (currentStrandPlanarProjection);
+
         }
 
     }
@@ -135,7 +140,7 @@ public class salon2D : MonoBehaviour {
         currentStrand = Instantiate (strandPrefab, initiatingHand.transform.position, initiatingHand.transform.rotation);
         currentStrand.transform.parent = initiatingHand.transform;
         Material randomStrandMaterial = currentHairType[Random.Range (0, currentHairType.Length)];
-        currentStrand.GetComponent<hairStrand> ().init (randomStrandMaterial);
+        currentStrand.transform.GetChild (0).gameObject.GetComponent<hairStrand> ().init (randomStrandMaterial);
     }
 
     // callback once we release the trigger to create a strand and add it to the strand list
@@ -144,10 +149,12 @@ public class salon2D : MonoBehaviour {
             if (currentStrand.transform.parent != null) {
                 currentStrand.transform.parent = null;
             }
+            currentStrand.transform.GetChild (0).gameObject.GetComponent<hairStrand> ().end ();
+            currentStrand.transform.GetChild (0).gameObject.GetComponent<TrailRenderer> ().emitting = false;
 
-            currentStrand.GetComponent<TrailRenderer> ().emitting = false;
-            hairStrands.Add (currentStrand.GetComponent<TrailRenderer> ());
+            hairStrands.Add (currentStrand.transform.GetChild (0).gameObject.GetComponent<TrailRenderer> ());
             currentStrand = null;
+            leftHand.transform.position = Vector3.zero;
         }
     }
 
@@ -180,6 +187,7 @@ public class salon2D : MonoBehaviour {
 
         string timeText = System.DateTime.Now.ToString ("hh.mm.ss");
         MeshToFile (exportTarget, "hairdoExport " + timeText + ".obj");
+        exportTarget.mesh = null;
     }
 
     // courtesy of KeliHlodversson @ https://wiki.unity3d.com/index.php/ObjExporter

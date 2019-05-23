@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/Salon.unity
-    guid: f9931e6d7398df54cba0b16fd31c2bb7
+    path: Assets/Scene/Salon2D.unity
+    guid: 1bb80c03c331b4445a4d2a55b2bc28c3
   m_configObjects: {}
