@@ -8,7 +8,7 @@ With this tool (offered in VR or Desktop versions), authoring hair has never bee
 
 Unlike most of my other stuff, this repo contains both the source project and executable releases - It's up to you to decide if you want to do your grooming in-Unity (which can allow you to debug stuff you don't like or change materials) or use the more compact executable for portability (or if you use Godot or Unreal or don't have a Unity install on hand).
 
-![ui](images/2Dui.gif)
+![2dui](images/2dui.gif)
 
 ### Control Scheme - Desktop
 
